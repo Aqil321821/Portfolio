@@ -1,0 +1,493 @@
+:root {
+    --mygolden: #fdb523;
+    --mylightgrey: #363543;
+    --mydarkgrey: #2d2d39;
+    --icon-bg-color: #47485c;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+/* Utility classes  */
+.golden {
+    color: var(--mygolden);
+}
+
+.para-prop {
+    font-family: 'Noto Sans Lepcha', sans-serif;
+    text-align: left;
+    opacity: .6;
+}
+
+.p-in-portfolio {
+    font-family: 'Noto Sans Lepcha', sans-serif;
+    text-align: left;
+    opacity: .6;
+    font-size: medium;
+}
+
+.h-in-portfolio {
+    font-family: 'Golos Text', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.h-in-portfolio-right {
+    font-family: 'Golos Text', sans-serif;
+    font-size: 18px;
+    font-weight: 250;
+}
+
+.hr-portfolio {
+    border: var(--mylightgrey) solid 2px;
+    border-bottom: none;
+    margin-bottom: 8px;
+    width: 86%;
+}
+
+.icon-in-box {
+    background-color: var(--mydarkgrey);
+    /* border-radius: 50%; */
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    /* padding-top: 8px; */
+    padding: 8px;
+    border-radius: 50%;
+}
+
+
+
+/* End of Utility classes  */
+
+
+header {
+    background-color: var(--mylightgrey);
+    width: 100%;
+    height: 650px;
+    position: relative;
+
+
+}
+
+.circle {
+    height: 450px;
+    width: 480px;
+    border-radius: 50%;
+    background-color: var(--mydarkgrey);
+    position: absolute;
+    top: 15%;
+    left: 33%;
+    z-index: 1;
+}
+
+#first-section img {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    z-index: 1;
+
+
+}
+
+#navbar {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#navbar .links-menu {
+    margin-left: 150px;
+
+}
+
+#navbar .links-menu a {
+    text-decoration: none;
+    color: var(--icon-bg-color);
+
+}
+
+#navbar .links-menu a:hover {
+    color: whitesmoke;
+}
+
+#navbar .links-menu a.current {
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#navbar .logo {
+    margin-left: 70px;
+}
+
+#navbar .links-menu ul {
+    list-style: none;
+    display: flex;
+    padding: 15px;
+    gap: 30px;
+}
+
+#navbar .right-icons ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    /* margin-left: 25px; */
+}
+
+#navbar .right-icons {
+    margin-left: auto;
+    margin-right: 45px;
+}
+
+ion-icon {
+    font-size: 25px;
+    color: white;
+}
+
+/* Controlling content of header */
+#content-first {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    align-items: center;
+    margin: 75px 45px 100px 75px;
+    gap: 15px;
+
+}
+
+#content-first .bio {
+    margin-top: 95px;
+}
+
+/* Styling the first div of grid  */
+#content-first .bio h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: lightgray;
+}
+
+#content-first .bio h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 4px;
+}
+
+#content-first hr {
+    width: 95px;
+    line-height: 75px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-width: 3px;
+    border-radius: 15px;
+    border-color: var(--mygolden);
+
+
+}
+
+#content-first .bio p {
+
+    width: 320px;
+    height: 180px;
+    overflow: hidden;
+    font-family: 'Noto Sans Lepcha', sans-serif;
+    text-align: left;
+    opacity: .6;
+    margin-bottom: -70px;
+}
+
+/* styling 2nd div (right grid) of first-content */
+#content-first .services {
+    margin-left: 235px;
+}
+
+#content-first .services h3 {
+    opacity: .7;
+    font-weight: 400;
+    font-size: 20px;
+    color: #e7e1e1;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 18px;
+
+}
+
+#content-first .services p {
+    opacity: .9;
+    font-weight: 400;
+    font-size: 20px;
+    color: #e7e1e1;
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+    width: 350px;
+
+}
+
+/* Styling see more link */
+.btn {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--mygolden);
+    font-size: medium;
+}
+
+.btn [name] {
+    color: var(--mygolden);
+    font-size: 23px;
+}
+
+#content-first .services ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-top: 18px;
+}
+
+#content-first .services ul li {
+    background-color: #646262;
+    /* border-radius: 50%; */
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 50%;
+
+}
+
+#content-first .services ul li [name] {
+    color: var(--mygolden);
+}
+
+/* Porfolio Section  */
+#portfolio-content {
+    width: 100%;
+    height: 1200px;
+    background-color: var(--mydarkgrey);
+    padding-left: 70px;
+    padding-right: 45px;
+    padding-top: 200px;
+}
+
+/* making portfolio box into two grid columns */
+#portfolio-content .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+/* making right box of portfolio section  */
+#portfolio-content .container .port-left {
+
+    height: 400px;
+    margin-top: 50px;
+}
+
+
+
+#portfolio-content .container .port-left .bold {
+
+    width: 360px;
+    line-height: 1.2;
+
+}
+
+#portfolio-content .container .port-left .small {
+
+    width: 320px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#portfolio-content .container .port-left table {
+    line-height: 1.5;
+}
+
+#portfolio-content .container .port-left table p {
+
+    width: 320px;
+}
+
+/* working on the right container of portfolio */
+#portfolio-content .container .port-right {
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 600px;
+
+}
+
+/*making each grid row of right drid column into flexbox to control its child  */
+
+
+
+#portfolio-content .container .port-right .right-container .item-1 {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    padding-bottom: 6px;
+
+}
+
+/* handling of items inside first row of right grid  */
+#portfolio-content .container .port-right .right-container .item-1 img {
+    height: 110px;
+    width: 130px;
+}
+
+#portfolio-content .container .port-right .right-container .item-1 .ui {
+    align-self: center;
+    line-height: 1.8;
+
+}
+
+/* ???sir yahan pe icon pe align-self ki prop q nahi lag rahi??? */
+#portfolio-content .container .port-right .right-container .item-1 .golden {
+    margin-top: 30px;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+/* styling first hr  styled through utility class of .hr-portfolio*/
+
+/* handling of items inside second row of right grid  */
+#portfolio-content .container .port-right .right-container .item-2 {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    padding-bottom: 6px;
+
+}
+
+#portfolio-content .container .port-right .right-container .item-2 img {
+    height: 110px;
+    width: 130px;
+}
+
+#portfolio-content .container .port-right .right-container .item-2 .front {
+    align-self: center;
+    line-height: 1.8;
+
+}
+
+/* ???sir yahan pe icon pe align-self ki prop q nahi lag rahi??? */
+#portfolio-content .container .port-right .right-container .item-2 .golden {
+    margin-top: 30px;
+    margin-left: 160px;
+    cursor: pointer;
+}
+
+/* handling of items inside third row of right grid  */
+#portfolio-content .container .port-right .right-container .item-3 {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+    padding-bottom: 6px;
+
+}
+
+#portfolio-content .container .port-right .right-container .item-3 img {
+    height: 110px;
+    width: 130px;
+}
+
+#portfolio-content .container .port-right .right-container .item-3 .mobile {
+    align-self: center;
+    line-height: 1.8;
+
+}
+
+/* ???sir yahan pe icon pe align-self ki prop q nahi lag rahi??? */
+#portfolio-content .container .port-right .right-container .item-3 .golden {
+    margin-top: 30px;
+    margin-left: 145px;
+    cursor: pointer;
+}
+
+.first-box,
+.second-box,
+.third-box {
+    width: 350px;
+    height: 350px;
+    background-color: var(--mylightgrey);
+
+
+}
+
+#last-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 30px;
+    
+
+
+
+}
+.first-box{
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    line-height: 1.7;
+    border-radius: 10px;
+
+}
+.second-box{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    line-height: 1.7;
+    border-radius: 10px;
+}
+.third-box{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    line-height: 1.7;
+    border-radius: 10px;
+}
+.poster{
+    width: 90%;
+    height: 150px;
+    margin-left:60px;
+    background-color: #3b3a4a;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+
+}
+.meta , .google , .intel , .microsoft {
+    width: 250px;
+    height:80px;
+    background-color: #2d2d39;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    
+    opacity: .9;
+    
+}
+.poster{
+    position: absolute;
+    top: 510px;
+}
